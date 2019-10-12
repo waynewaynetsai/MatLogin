@@ -1,0 +1,29 @@
+<section class="form-container mt-5">
+  <mat-progress-bar mode="indeterminate"
+    *ngIf="selectedIndex===steps.length-1">
+  </mat-progress-bar>
+	<div class="form-panel form-fontStyle overflow-hidden">
+		<header cdkStepHeader class="form-panel-header f-row">
+      <button
+        color="primary"
+        class="mr-1"
+        mat-icon-button
+        cdkStepperPrevious>
+        <mat-icon>keyboard_backspace</mat-icon>
+      </button>
+			<div class="fontSize-18 form-title font-grey-op">
+          <span class="account">Angular&nbsp;Account</span>&nbsp;
+      </div>
+      <button
+        color="primary"
+        class="header-action"
+        mat-icon-button>
+        <mat-icon>more_vert</mat-icon>
+      </button>
+		</header>
+		<div class="step-form" [formGroup]="fs.loginForm" *ngIf="selected" [@stepSlider]="selectedIndex">
+      <ng-container [ngTemplateOutlet]="selected.content">
+      </ng-container>
+		</div>
+  </div>
+</section>

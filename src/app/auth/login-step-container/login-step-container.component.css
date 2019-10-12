@@ -1,0 +1,88 @@
+.step-form {
+  position: relative;
+}
+.form-container {
+  width:368px;
+  max-width: 100%;
+  background:#fff;
+  box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.158);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.form-panel {
+  width: 330px;
+  padding:16px;
+  margin: 0 auto;
+}
+
+.form-panel-header {
+  position: relative;
+  margin-bottom: 16px;
+  margin-top: 3px;
+  margin-left: -8px;
+  padding-bottom: 8px;
+  width: 100%;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.form-panel-header:focus {
+  color: yellow;
+}
+
+.form-fontStyle {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5em;
+  font-family: Roboto;
+}
+.form-title {
+  margin-top: 3px;
+}
+.hideOverflow {
+    overflow: hidden;
+}
+.step-navigation-bar {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+span.ng-logo {
+  color: rgba(255, 0, 0, 0.61);
+}
+span.account {
+  color: #3F51B5;
+}
+span.step-count {
+   color: rgba(23, 119, 245, 0.575);
+}
+.header-action {
+  position: absolute;
+  right: -20px;
+}
+.icon-btn {
+  transform: translate(-50%, -50%);
+}
+
+.step {
+  background: transparent;
+  border: 0;
+  margin: 0 10px;
+  padding: 10px;
+  color: black;
+}
+
+.step.active {
+  color: blue;
+  border-bottom: 1px solid blue;
+}
+
+.nav-button {
+  background: transparent;
+  border: 0;
+}
+::ng-deep .mat-icon {
+   vertical-align: middle;
+}

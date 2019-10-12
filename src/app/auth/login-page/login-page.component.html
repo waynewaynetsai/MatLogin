@@ -1,0 +1,13 @@
+<section id="login-page">
+	<app-login-step-container [linear]="'true'">
+		<cdk-step [stepControl]="fs.loginForm.get('account')">
+      <app-check-account></app-check-account>
+		</cdk-step>
+		<cdk-step [stepControl]="fs.loginForm.get('password')">
+			<app-check-password></app-check-password>
+		</cdk-step>
+    <cdk-step>
+			<app-redirect></app-redirect>
+		</cdk-step>
+	</app-login-step-container>
+</section>
